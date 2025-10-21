@@ -83,7 +83,6 @@ def main():
 
     # --- Language unification ---
     df["language_final"] = coalesce_series(
-        df["language"],
         df["Trustpilot: language"],
         df["Google Play: language"]
     )
